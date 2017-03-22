@@ -12,3 +12,7 @@
 - Legoland
 
 ### Local Attractions
+
+- Gatorland
+- Payne's Praire in Gainesville
+- Lake Eola
