@@ -7,4 +7,8 @@
 
 ### Tourist Attractions
 
+- Disney World
+- Universal Studios Orlando
+- Legoland
+
 ### Local Attractions
