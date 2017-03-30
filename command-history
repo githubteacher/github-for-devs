@@ -1,0 +1,231 @@
+git --version
+git config --list
+git config --global user.name "GitHub Teacher"
+git config --global user.email "trainingdemos+githubteacher@github.com"
+git config --global core.autocrlf input
+git config --global --list
+git clone https://github.com/githubteacher/github-for-devs.git
+cd github-for-devs/
+git branch
+git branch --all
+git checkout githubteacher-orlando
+git branch
+git status
+git branch
+ls
+ls -al
+touch githubteacher-orlando.md
+ls
+open .
+git status
+git add githubteacher-orlando.md
+git status
+git commit
+git status
+git push
+ls -al
+cat githubteacher-orlando.md
+git branch --all
+git fetch
+git status
+git merge origin/githubteacher-orlando
+git pull
+ls -al
+cat githubteacher-orlando.md
+open .
+git status
+git add githubteacher-orlando.md
+git status
+git commit -m "add local attractions to Orlando file"
+git status
+git push
+git checkout master
+ls -al
+git pull
+ls -al
+git branch --all
+git branch --merged
+git branch -d githubteacher-orlando
+git branch --all
+git pull --prune
+git config --global fetch.prune true
+git log
+git log --oneline
+git log --oneline --graph
+git log --oneline --graph --decorate
+git log --oneline --graph --decorate --all
+git log --stat
+git log --patch
+git log --oneline --graph --decorate --all
+git config --global alias.lol "log --oneline --graph --decorate --all"
+git lol
+git config --global alias.co "checkout -b"
+git config --global alias.ss "status -s"
+git ss
+cd scratch/
+git clone https://github.com/githubstudent/github-games.git
+cd github-games
+git branch
+git branch --all
+git branch readme-updates
+git branch
+git checkout readme-updates
+git branch
+atom README.md
+git status
+git add README.md
+git status
+git commit -m "update game url"
+git push
+git remote -v
+git push --set-upstream origin readme-updates
+git checkout gh-pages
+git pull
+git branch --merged
+git branch -d readme-updates
+git branch --all
+git config --list
+git fetch --prune
+git branch --all
+git lol
+git checkout stats-update
+git branch --all
+git lol
+git merge gh-pages
+open .
+git status
+git add inde.html
+git status
+git commit -m "reverse merge gh-pages into stats-update"
+git status
+git lol
+git checkout gh-pages
+git lol
+ls -al
+git bisect start
+git bisect bad HEAD
+git bisect good b7454
+ls
+git bisect bad
+ls
+git bisect good
+git bisect reset
+git bisect start HEAD b7454
+git bisect run ls index.html
+git bisect reset
+git show 2710
+git revert 2710
+git log
+git show c92c
+ls
+git push
+git remote -v
+git remote add partner https://github.com/githubteacher/github-games-partner.git
+git remote -v
+git branch --all
+git fetch partner
+git branch --all
+git checkout -b shape-colors origin/shape-colors
+git merge partner/shape-colors
+git push
+git fetch origin
+git branch --all
+git checkout -b shape-colors origin/shape-colors
+git merge gh-pages
+git status
+atom index.html
+git status
+git add index.html
+git commit -m "reverse merge gh-pages"
+git status
+git checkout gh-pages
+git merge --no-ff shape-colors
+git push origin gh-pages
+git branch --merged
+git branch -d shape-colors
+git fetch --prune
+git branch -d shape-colors
+git lol
+git checkout -b slow-down
+atom index.html
+ls
+mkdir images
+git mv texture.jpg images/
+git status
+ls
+git add -p
+git status
+git diff
+git diff --staged
+git diff HEAD
+git status
+git commit -m "move background img into its own folder"
+git status
+git diff
+git add index.html
+git diff --staged
+git commit -m "slow down game"
+git push
+git push --set-upstream origin slow-down
+cd scratch/
+rm -rf practice-repo
+git init practice-repo
+cd practice-repo/
+ls -al
+tree .git
+cat .git/HEAD
+cat .git/refs/heads/master
+touch README.md
+tree .git
+git status
+git add README.md
+git status
+tree .git
+git commit -m "intialize repo with a readme"
+tree .git
+git log --oneline
+cat .git/refs/heads/master
+for d in {1..6}; do touch "file${d}.md"; git add "file${d}.md"; git commit -m "adding file ${d}"; done
+git lol
+git status
+git reset --soft HEAD~2
+git status
+git commit -m "adding files 5 and 6 together"
+git lol
+git reset HEAD~
+git status
+git add file.md
+git commit -m "adding file 5"
+git add file.md
+git commit -m "adding file 6"
+git lol
+git reset --hard 0a73f14
+git status
+git lol
+git reflog
+git cherry-pick 7d416e7
+git lol
+ls
+git reset --hard a67ee73
+git lol
+git reset --hard 0a73f14
+git lol
+git checkout -b rebase-me
+git reflog
+git cherry-pick f0caa46 f610f7e 7fba1c7
+git lol
+git checkout master
+git cherry-pick 62ad1b2 5c61566 7d416e7
+git lol
+git checkout rebase-me
+git rebase -i master
+git lol
+git checkout master
+git merge rebase-me
+git lol
+git lol
+touch file7.md
+git add file7.md
+git status
+git commit --amend
+git lol
